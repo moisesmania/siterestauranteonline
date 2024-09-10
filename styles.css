@@ -1,0 +1,247 @@
+/* Estilos gerais */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #0a6b33;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+nav ul {
+    background-color: #0a6b33;
+    overflow: hidden;
+    color: white;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilos para página inicial (index.html) */
+.home-page {
+    background-image: url(' fotos/phc8dlah91bnlhybsbasxj7fumaphbgrmvlovubu77irejxvklcz9itvwarb4mvk-o.avif '); /* Imagem de fundo específica */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Ocupa toda a altura da tela */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/* Estilos para a página "Quem Somos" (sobre.html) */
+.about-page {
+    background-image: url(' fotos/phc8dlah91bnlhybsbasxj7fumaphbgrmvlovubu77irejxvklcz9itvwarb4mvk-o.avif '); /* Imagem de fundo específica */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.about-page .overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente para destacar o texto */
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #0a6b33;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos de responsividade */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        padding: 10px;
+    }
+}
+
+/* Estilos gerais */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #0a6b33;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+nav ul {
+    background-color: #0a6b33;
+    overflow: hidden;
+    color: white;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilo para o grid de imagens do menu */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.menu-item {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 8px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.menu-item h2 {
+    margin: 10px 0;
+    color: #0a6b33;
+}
+
+.menu-item p {
+    margin: 5px 0;
+}
+
+.menu-item strong {
+    color: #0a6b33;
+    font-size: 18px;
+}
+
+/* Estilos de responsividade */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        padding: 10px;
+    }
+}
+
+/* Estilo para os itens do menu com fundo amadeirado */
+.menu-item {
+    background-image: url('fotos/wood-texture.jpg'); /* Substitua com o caminho para a sua imagem de madeira */
+    background-size: cover; /* Faz a imagem cobrir o elemento */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    padding: 15px; /* Adiciona espaço interno */
+    border-radius: 8px; /* Arredonda os cantos */
+    color: #333; /* Cor do texto */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Adiciona uma sombra sutil */
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito de hover no fundo amadeirado */
+.menu-item:hover {
+    background-color: rgba(255, 255, 255, 0.8); /* Adiciona um leve fundo branco ao passar o mouse */
+}
+
+
+
+/* Efeito de hover no nome do prato */
+.menu-item h2:hover {
+    color: #122dc9; /* Cor que será aplicada quando o mouse passar por cima */
+    transition: color 0.3s ease; /* Suaviza a transição de cor */
+}
+
+
+
+/* Efeito de hover nos preços */
+.menu-item strong:hover {
+    color: #122dc9; /* Cor que será aplicada quando o mouse passar por cima */
+    transition: color 0.3s ease; /* Suaviza a transição de cor */
+}
+
+
+/* Estilo para o grid de imagens do menu */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.menu-item {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Garante que o conteúdo não ultrapasse os limites */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Adiciona uma transição suave */
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 8px;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease; /* Adiciona uma transição suave à imagem */
+}
+
+/* Efeito de hover na imagem do prato */
+.menu-item:hover img {
+    transform: scale(1.05); /* Aumenta a imagem ligeiramente ao passar o mouse */
+}
+
+/* Efeito de hover no fundo amadeirado */
+.menu-item:hover {
+    background-color: rgba(255, 255, 255, 0.8); /* Adiciona um leve fundo branco ao passar o mouse */
+}
+
+/* Efeito de hover no nome do prato */
+.menu-item h2:hover {
+    color: #122dc9; /* Cor que será aplicada quando o mouse passar por cima */
+    transition: color 0.3s ease; /* Suaviza a transição de cor */
+}
+
+/* Efeito de hover nos preços */
+.menu-item strong:hover {
+    color: #122dc9; /* Cor que será aplicada quando o mouse passar por cima */
+    transition: color 0.3s ease; /* Suaviza a transição de cor */
+}
+
+
